@@ -1,0 +1,5 @@
+/lib
+/node_modules
+
+# We use Yarn
+/package-lock.json

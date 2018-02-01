@@ -1,0 +1,21 @@
+{
+  "name": "flow-runtime-experiment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:njlr/flow-runtime-experiment.git",
+  "author": "njlr <njlr@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "flow check && babel src/ -d lib/"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.39",
+    "@babel/core": "^7.0.0-beta.39",
+    "@babel/node": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39",
+    "@babel/preset-flow": "^7.0.0-beta.39",
+    "babel-plugin-flow-runtime": "^0.15.0",
+    "flow-bin": "^0.64.0",
+    "flow-runtime": "^0.16.0"
+  }
+}
