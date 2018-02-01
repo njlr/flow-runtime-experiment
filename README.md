@@ -6,10 +6,10 @@ For example, this:
 
 ```javascript=
 const add = (x, y) => {
-  if (Number.isNaN(x)) {
+  if (typeof x != 'number') {
     throw new Error('x must be a number');
   }
-  if (Number.isNaN(y)) {
+  if (typeof y != 'number') {
     throw new Error('y must be a number');
   }
   return x + y;
@@ -19,7 +19,7 @@ const add = (x, y) => {
 Can be written like this: 
 
 ```javascript=
-const add = (x : number, y : number) => {
+const add = (x : number, y : number) : number => {
   return x + y;
 }
 ```
